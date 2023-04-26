@@ -24,6 +24,7 @@ class ProjectById(Resource):
             project_dict,
             200
         )
+api.add_resource(ProjectById, '/projects/<int:id>')
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
