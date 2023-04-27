@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.75rem;
+    min-width: 100vw;
+    box-shadow: 0 5px 25px -10px #999;
+  }
+
+  .headerName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+  }
+
+  .navButtons {
+    display: none;
+  }
+
+  .menuNavBtn {
+    color: #333 !important;
+    margin: 0.5rem 0 !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    transition: color 0.5s;
+  }
+
+  .menuNavBtn:hover {
+    color: blue !important;
+  }
+
+  #headshot {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-left: 5vw;
+    margin-right: 1vw;
+  }
+
+  #name {
+    font-size: 16px;
+  }
+
+  .hamMenu {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .menu {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: 0;
+  }
+
+  .active {
+    transition: opacity 0.2s ease-in;
+    opacity: 1;
+    height: auto;
+  }
+
+  .menuItem {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5.2rem;
+    min-width: 100vw;
+    box-shadow: 0 5px 25px -10px #999;
+  }
+
+  .headerName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+  }
+
+  .navButtons {
+    width: 70%;
+    text-align: right;
+    margin: 0 2rem 0 0;
+  }
+
+  .navBtn {
+    color: #333 !important;
+    margin: auto 0.5rem !important;
+    font-weight: 700 !important;
+    font-size: 9px !important;
+    transition: color 0.5s;
+  }
+
+  .navBtn:hover {
+    color: blue !important;
+  }
+
+  #headshot {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-left: 5vw;
+    margin-right: 1vw;
+  }
+
+  #name {
+    font-size: 16px;
+  }
+
+  .hamMenu {
+    display: none;
+  }
+
+  .menu {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: 0;
+  }
+
+  .active {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: auto;
+  }
+
+  .menuItem {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 2rem 0 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5.2rem;
+    min-width: 100vw;
+    box-shadow: 0 5px 25px -10px #999;
+  }
+
+  .headerName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+  }
+
+  .navButtons {
+    width: 60%;
+    text-align: right;
+    margin: 0 2rem 0 0;
+  }
+
+  .navBtn {
+    color: #333 !important;
+    margin: auto 0.75rem !important;
+    font-weight: 700 !important;
+    font-size: 11px !important;
+    transition: color 0.5s;
+  }
+
+  .navBtn:hover {
+    color: blue !important;
+  }
+
+  #headshot {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-left: 5vw;
+    margin-right: 1vw;
+  }
+
+  #name {
+    font-size: 18px;
+  }
+
+  .hamMenu {
+    display: none;
+  }
+
+  .menu {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: 0;
+  }
+
+  .active {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5.6rem;
+    min-width: 100vw;
+    box-shadow: 0 5px 25px -10px #999;
+  }
+
+  .headerName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+  }
+
+  .navButtons {
+    width: 60%;
+    text-align: right;
+    margin: 0 2rem 0 0;
+  }
+
+  .navBtn {
+    color: #333 !important;
+    margin: auto 1.5rem !important;
+    padding: .75rem !important;
+    font-weight: 700 !important;
+    transition: color 0.5s;
+  }
+
+  .navBtn:hover {
+    color: blue !important;
+  }
+
+  #headshot {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 5vw;
+    margin-right: 1vw;
+  }
+
+  #name {
+    font-size: 22px;
+  }
+
+  .hamMenu {
+    display: none;
+  }
+
+  .menu {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: 0;
+  }
+
+  .active {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: auto;
+  }
+}
