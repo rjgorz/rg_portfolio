@@ -3,6 +3,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import Divider from '@mui/material/Divider';
 
 function HamMenu({ hamOpen }) {
 
@@ -12,15 +13,19 @@ function HamMenu({ hamOpen }) {
                 <li className='menuItem'>
                     <Button className='menuNavBtn' startIcon={<HomeIcon />}>Home</Button>
                 </li>
+                <Divider role='presentation'/>
                 <li className='menuItem'>
                     <Button className='menuNavBtn' startIcon={<PersonIcon />}>About Me</Button>
                 </li>
+                <Divider role='presentation'/>
                 <li className='menuItem'>
                     <Button className='menuNavBtn' startIcon={<TerminalIcon />}>Projects</Button>
                 </li>
+                <Divider role='presentation'/>
                 <li className='menuItem'>
                     <Button className='menuNavBtn' startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
                 </li>
+                <Divider role='presentation'/>
             </ul>
         </div>
     )

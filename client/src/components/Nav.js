@@ -28,20 +28,11 @@ function Nav() {
                     <Button className='navBtn' startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
                 </div>
                 <div className='hamMenu'>
-                    {hamOpen ? (
-                        <div className='hamBtn'>
-                            <IconButton area-label='close' onClick={() => setHamOpen(false)}>
-                                <CloseIcon />
-                            </IconButton>
-                        </div>
-                    ) : (
-                        <div className='hamBtn'>
-                            <IconButton area-label='menu' onClick={() => setHamOpen(true)}>
-                                <MenuIcon />
-                            </IconButton>
-                        </div>
-                    )
-                    }
+                    <div className='hamBtn'>
+                        <IconButton area-label='close' onClick={() => setHamOpen(hamOpen ? false : true)}>
+                            {hamOpen ? <CloseIcon /> : <MenuIcon />}
+                        </IconButton>
+                    </div>
                 </div>
             </div>
             <HamMenu hamOpen={hamOpen} />
