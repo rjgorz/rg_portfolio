@@ -1,25 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto;
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 429px) {
   .header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 3.75rem;
-    min-width: 100vw;
-    box-shadow: 0 5px 25px -10px #999;
+    min-width: 100%;
+    box-shadow: 0 20px 25px -10px #999;
   }
 
   .headerName {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 40%;
+    width: 100%;
   }
 
   .navButtons {
@@ -30,7 +31,7 @@
     color: #333 !important;
     margin: 0.5rem 0 !important;
     font-weight: 700 !important;
-    font-size: 18px !important;
+    font-size: 14px !important;
     transition: color 0.5s;
   }
 
@@ -66,6 +67,9 @@
     transition: opacity 0.2s ease-in;
     opacity: 1;
     height: auto;
+    position: fixed;
+    box-shadow: 0 20px 25px -10px #999;
+    z-index: 1000;
   }
 
   .menuItem {
@@ -73,42 +77,45 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    background-color: white;
   }
+
+  /* #root > div.menu.active > ul > li > a {
+    margin-right: 2rem !important;
+  } */
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 430px) and (max-width: 599px) {
   .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    height: 5.2rem;
-    min-width: 100vw;
-    box-shadow: 0 5px 25px -10px #999;
+    justify-content: space-between;
+    height: 3.75rem;
+    min-width: 100%;
+    box-shadow: 0 20px 25px -10px #999;
   }
 
   .headerName {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 30%;
+    width: 40%;
   }
 
   .navButtons {
-    width: 70%;
-    text-align: right;
-    margin: 0 2rem 0 0;
+    display: none;
   }
 
-  .navBtn {
+  .menuNavBtn {
     color: #333 !important;
-    margin: auto 0.5rem !important;
+    margin: 0.5rem 0 !important;
     font-weight: 700 !important;
-    font-size: 9px !important;
+    font-size: 16px !important;
     transition: color 0.5s;
   }
 
-  .navBtn:hover {
+  .menuNavBtn:hover {
     color: blue !important;
   }
 
@@ -125,22 +132,103 @@
   }
 
   .hamMenu {
-    display: none;
+    display: flex;
+    margin-right: 1rem;
   }
 
   .menu {
+    width: 100vw;
     transition: opacity 0.2s ease-out;
     opacity: 0;
     height: 0;
   }
 
   .active {
+    transition: opacity 0.2s ease-in;
+    opacity: 1;
+    height: auto;
+    position: fixed;
+    box-shadow: 0 20px 25px -10px #999;
+    z-index: 1000;
+  }
+
+  .menuItem {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 4.8rem;
+    min-width: 100%;
+    box-shadow: 0 20px 25px -10px #999;
+  }
+
+  .headerName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 35%;
+  }
+
+  .navButtons {
+    width: 65%;
+    text-align: right;
+    margin: 0 1.5rem 0 0;
+  }
+
+  .navBtn {
+    color: #333 !important;
+    margin: auto 0.4rem !important;
+    font-weight: 700 !important;
+    font-size: 9px !important;
+    transition: color 0.5s;
+  }
+
+  .navBtn:hover {
+    color: blue !important;
+  }
+
+  #headshot {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 5vw;
+    margin-right: 1vw;
+  }
+
+  #name {
+    font-size: 16px;
+  }
+
+  .hamMenu {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: 0;
+  }
+
+  .active {
+    display: none;
     transition: opacity 0.2s ease-out;
     opacity: 0;
     height: auto;
   }
 
   .menuItem {
+    display: none;
     list-style: none;
     display: flex;
     flex-direction: row-reverse;
@@ -155,8 +243,8 @@
     align-items: center;
     justify-content: center;
     height: 5.2rem;
-    min-width: 100vw;
-    box-shadow: 0 5px 25px -10px #999;
+    min-width: 100%;
+    box-shadow: 0 20px 25px -10px #999;
   }
 
   .headerName {
@@ -185,8 +273,8 @@
   }
 
   #headshot {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     margin-left: 5vw;
     margin-right: 1vw;
@@ -201,12 +289,14 @@
   }
 
   .menu {
+    display: none;
     transition: opacity 0.2s ease-out;
     opacity: 0;
     height: 0;
   }
 
   .active {
+    display: none;
     transition: opacity 0.2s ease-out;
     opacity: 0;
     height: auto;
@@ -220,8 +310,8 @@
     align-items: center;
     justify-content: center;
     height: 5.6rem;
-    min-width: 100vw;
-    box-shadow: 0 5px 25px -10px #999;
+    min-width: 100%;
+    box-shadow: 0 20px 25px -10px #999;
   }
 
   .headerName {
@@ -250,8 +340,8 @@
   }
 
   #headshot {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     border-radius: 100%;
     margin-left: 5vw;
     margin-right: 1vw;
@@ -266,12 +356,14 @@
   }
 
   .menu {
+    display: none;
     transition: opacity 0.2s ease-out;
     opacity: 0;
     height: 0;
   }
 
   .active {
+    display: none;
     transition: opacity 0.2s ease-out;
     opacity: 0;
     height: auto;

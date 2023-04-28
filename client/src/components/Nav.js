@@ -19,7 +19,7 @@ function Nav() {
             <div className='header'>
                 <div className='headerName'>
                     <img src={headshot} alt='Robert Gorz' id='headshot' />
-                    <h1 id='name'>Robert Gorz</h1>
+                    <h1 id='name'>ROBERT GORZ</h1>
                 </div>
                 <div className='navButtons'>
                     <Button className='navBtn' startIcon={<HomeIcon />}>Home</Button>
@@ -35,7 +35,7 @@ function Nav() {
                     </div>
                 </div>
             </div>
-            <HamMenu hamOpen={hamOpen} />
+            <HamMenu hamOpen={hamOpen} setHamOpen={setHamOpen} />
         </>
     )
 }

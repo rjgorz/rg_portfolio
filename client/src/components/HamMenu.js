@@ -5,27 +5,28 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import Divider from '@mui/material/Divider';
 
-function HamMenu({ hamOpen }) {
+function HamMenu({ hamOpen, setHamOpen }) {
 
     return (
         <div className={hamOpen ? 'menu active' : 'menu'}>
             <ul>
+                <Divider role='presentation' />
                 <li className='menuItem'>
-                    <Button className='menuNavBtn' startIcon={<HomeIcon />}>Home</Button>
+                    <Button className='menuNavBtn' href='#home_link' onClick={() => setHamOpen(false)} startIcon={<HomeIcon />}>Home</Button>
                 </li>
-                <Divider role='presentation'/>
+                <Divider role='presentation' />
                 <li className='menuItem'>
-                    <Button className='menuNavBtn' startIcon={<PersonIcon />}>About Me</Button>
+                    <Button className='menuNavBtn' onClick={() => setHamOpen(false)} startIcon={<PersonIcon />}>About Me</Button>
                 </li>
-                <Divider role='presentation'/>
+                <Divider role='presentation' />
                 <li className='menuItem'>
-                    <Button className='menuNavBtn' startIcon={<TerminalIcon />}>Projects</Button>
+                    <Button className='menuNavBtn' onClick={() => setHamOpen(false)} startIcon={<TerminalIcon />}>Projects</Button>
                 </li>
-                <Divider role='presentation'/>
+                <Divider role='presentation' />
                 <li className='menuItem'>
-                    <Button className='menuNavBtn' startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
+                    <Button className='menuNavBtn' onClick={() => setHamOpen(false)} startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
                 </li>
-                <Divider role='presentation'/>
+                <Divider role='presentation' />
             </ul>
         </div>
     )
