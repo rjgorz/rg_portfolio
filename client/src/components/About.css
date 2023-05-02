@@ -6,25 +6,17 @@
     text-align: center;
     height: 100%;
     width: 100%;
-    scroll-margin-top: 5.6rem;
-    padding-bottom: 13rem;
+    scroll-margin-top: 15rem;
+    padding-bottom: 18rem;
 }
 
-h2 {
+#about > h2 {
     font-size: 42px;
     margin-bottom: 1rem
 }
 
 h3 {
     font-size: 28px;
-}
-
-#about_horiz_divider {
-    width: 2rem;
-    height: .4rem;
-    border-radius: 5px;
-    background-color: blue;
-    margin-bottom: 6rem;
 }
 
 .about_vert_divider {
@@ -78,7 +70,7 @@ h3 {
 #skill_boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -99,8 +91,8 @@ h3 {
 }
 
 @media screen and (max-width: 1131px) {
-    h2 {
-        font-size: 32px;
+    #about > h2 {
+        font-size: 2px;
     }
 
     .about_container {
@@ -143,11 +135,5 @@ h3 {
         height: 75px;
         width: 75px;
         transition: all 0.5s;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 899px) {
-    h2 {
-        font-size: 32px;
     }
 }
