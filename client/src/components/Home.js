@@ -4,7 +4,7 @@ import EastIcon from '@mui/icons-material/East';
 import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import BookIcon from '@mui/icons-material/Book';
+import medium from '../images/medium.png';
 
 function Home() {
 
@@ -12,8 +12,8 @@ function Home() {
         <div id='home'>
             <div className='social_links'>
                 <a href='https://github.com/rjgorz' target='_blank' rel="noreferrer"><GitHubIcon sx={{ color: 'black' }} fontSize="large" /></a>
-                <a href='https://linkedin.com/rjgorz' target='_blank' rel="noreferrer"><LinkedInIcon sx={{ color: 'black' }} fontSize="large" /></a>
-                <a href='https://medium.com/@rjgorz' target='_blank' rel="noreferrer"><BookIcon sx={{ color: 'black' }} fontSize="large" /></a>
+                <a href='https://linkedin.com/in/rjgorz/' target='_blank' rel="noreferrer"><LinkedInIcon sx={{ color: 'black' }} fontSize="large" /></a>
+                <a href='https://medium.com/@rjgorz' target='_blank' rel="noreferrer"><img src={medium} height='26px' alt='medium blog'/></a>
             </div>
             <h1>HEY, I'M ROBERT GORZ</h1>
             <Typewriter
@@ -25,7 +25,6 @@ function Home() {
                     deleteSpeed: 40
                 }}
             />
-            
             <div id='project_btn'>
                 <Button className='home_option_button' variant='contained' startIcon={<EastIcon />}>See my projects</Button>
             </div>

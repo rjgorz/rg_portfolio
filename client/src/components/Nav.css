@@ -120,8 +120,8 @@
   }
 
   #headshot {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 100%;
     margin-left: 5vw;
     margin-right: 1vw;
@@ -167,7 +167,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 4.8rem;
+    height: 3.75rem;
     min-width: 100%;
     box-shadow: 0 20px 25px -10px #999;
   }

@@ -6,8 +6,10 @@ function App() {
   return (
     <>
       <Nav />
-      <Home />
-      <About />
+      <div id='app_container'>
+        <Home />
+        <About />
+      </div>
     </>
   );
 }
