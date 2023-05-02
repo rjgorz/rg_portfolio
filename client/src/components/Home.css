@@ -21,21 +21,26 @@
     font-size: 32px;
 }
 
-.home_options {
+.social_links {
+    position: fixed;
+    left: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -10px #999;
 }
 
-/* #project_btn {
-    margin-left: -0.5rem;
+.social_links > a {
+    margin: .5rem;
+    opacity: 50%;
+    transition: all 0.3s;
 }
 
-#learn_btn {
-    margin-left: 4rem;
-} */
-
+.social_links > a:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+}
 
 
 @media screen and (max-width: 599px) {
@@ -45,6 +50,10 @@
     
     .Typewriter__wrapper, .Typewriter__cursor {
         font-size: 20px;
+    }
+
+    .social_links {
+        display: none;
     }
 }
 

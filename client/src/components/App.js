@@ -1,13 +1,13 @@
 import Nav from './Nav';
 import Home from './Home';
+import About from './About';
 
 function App() {
   return (
     <>
       <Nav />
-      <a id='home_link'>
-        <Home />
-      </a>
+      <Home />
+      <About />
     </>
   );
 }

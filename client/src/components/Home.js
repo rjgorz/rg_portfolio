@@ -2,11 +2,19 @@ import './Home.css';
 import Typewriter from 'typewriter-effect';
 import EastIcon from '@mui/icons-material/East';
 import Button from '@mui/material/Button';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import BookIcon from '@mui/icons-material/Book';
 
 function Home() {
 
     return (
         <div id='home'>
+            <div className='social_links'>
+                <a href='https://github.com/rjgorz' target='_blank' rel="noreferrer"><GitHubIcon sx={{ color: 'black' }} fontSize="large" /></a>
+                <a href='https://linkedin.com/rjgorz' target='_blank' rel="noreferrer"><LinkedInIcon sx={{ color: 'black' }} fontSize="large" /></a>
+                <a href='https://medium.com/@rjgorz' target='_blank' rel="noreferrer"><BookIcon sx={{ color: 'black' }} fontSize="large" /></a>
+            </div>
             <h1>HEY, I'M ROBERT GORZ</h1>
             <Typewriter
                 options={{
@@ -17,13 +25,9 @@ function Home() {
                     deleteSpeed: 40
                 }}
             />
-            <div className='home_options'>
-                <div id='project_btn'>
-                    <Button className='home_option_button' variant='outlined' startIcon={<EastIcon />}>See my projects</Button>
-                </div>
-                <div id='learn_btn'>
-                    <Button className='home_option_button' variant='outlined' startIcon={<EastIcon />}>Learn more</Button>
-                </div>
+            
+            <div id='project_btn'>
+                <Button className='home_option_button' variant='contained' startIcon={<EastIcon />}>See my projects</Button>
             </div>
         </div>
     )
