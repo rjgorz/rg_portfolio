@@ -22,10 +22,10 @@ function Nav() {
                     <h1 id='name'>ROBERT GORZ</h1>
                 </div>
                 <div className='navButtons'>
-                    <Button className='navBtn' startIcon={<HomeIcon />}>Home</Button>
-                    <Button className='navBtn' startIcon={<PersonIcon />}>About Me</Button>
-                    <Button className='navBtn' startIcon={<TerminalIcon />}>Projects</Button>
-                    <Button className='navBtn' startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
+                    <Button className='navBtn' href='#home' startIcon={<HomeIcon />}>Home</Button>
+                    <Button className='navBtn' href='#about' startIcon={<PersonIcon />}>About</Button>
+                    <Button className='navBtn' href='#projects' startIcon={<TerminalIcon />}>Projects</Button>
+                    <Button className='navBtn' href='#contact' startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
                 </div>
                 <div className='hamMenu'>
                     <div className='hamBtn'>

@@ -4,9 +4,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
-    background: no-repeat url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Abstract-background-white-12.jpg/2560px-Abstract-background-white-12.jpg');
+    scroll-margin-top: 5.6rem;
+    /* background: no-repeat url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Abstract-background-white-12.jpg/2560px-Abstract-background-white-12.jpg'); */
 }
 
 #home > h1 {
@@ -22,7 +23,7 @@
 }
 
 .social_links {
-    position: fixed;
+    position: absolute;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -64,5 +65,9 @@
     
     .Typewriter__wrapper, .Typewriter__cursor {
         font-size: 26px;
+    }
+
+    .social_links {
+        transform: scale(.65)
     }
 }

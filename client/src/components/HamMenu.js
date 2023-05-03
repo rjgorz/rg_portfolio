@@ -12,19 +12,19 @@ function HamMenu({ hamOpen, setHamOpen }) {
             <ul>
                 <Divider role='presentation' />
                 <li className='menuItem'>
-                    <Button className='menuNavBtn' href='#home_link' onClick={() => setHamOpen(false)} startIcon={<HomeIcon />}>Home</Button>
+                    <Button className='menuNavBtn' href='#home' onClick={() => setHamOpen(false)} startIcon={<HomeIcon />}>Home</Button>
                 </li>
                 <Divider role='presentation' />
                 <li className='menuItem'>
-                    <Button className='menuNavBtn' onClick={() => setHamOpen(false)} startIcon={<PersonIcon />}>About Me</Button>
+                    <Button className='menuNavBtn' href='#about' onClick={() => setHamOpen(false)} startIcon={<PersonIcon />}>About</Button>
                 </li>
                 <Divider role='presentation' />
                 <li className='menuItem'>
-                    <Button className='menuNavBtn' onClick={() => setHamOpen(false)} startIcon={<TerminalIcon />}>Projects</Button>
+                    <Button className='menuNavBtn' href='#projects' onClick={() => setHamOpen(false)} startIcon={<TerminalIcon />}>Projects</Button>
                 </li>
                 <Divider role='presentation' />
                 <li className='menuItem'>
-                    <Button className='menuNavBtn' onClick={() => setHamOpen(false)} startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
+                    <Button className='menuNavBtn' href='#contact' onClick={() => setHamOpen(false)} startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
                 </li>
                 <Divider role='presentation' />
             </ul>
