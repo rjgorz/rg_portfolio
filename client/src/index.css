@@ -18,6 +18,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.horiz_divider {
+  width: 2rem;
+  height: .4rem;
+  border-radius: 5px;
+  background-color: blue;
+  margin-bottom: 6rem;
+}
+
 /* #app_container {
   background: linear-gradient(
     -25deg,

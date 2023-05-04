@@ -15,7 +15,7 @@ function About() {
     return (
         <div id='about'>
             <h2>ABOUT</h2>
-            <div id='about_horiz_divider'></div>
+            <div className='horiz_divider'></div>
             <div className='about_container'>
                 <div id='about_me'>
                     <h3>Get to Know Me!</h3>
