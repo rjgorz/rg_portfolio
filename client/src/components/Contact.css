@@ -7,11 +7,20 @@
     height: 100%;
     width: 100%;
     scroll-margin-top: 10rem;
+    padding-bottom: 18rem;
 }
 
 #contact > h2 {
     font-size: 42px;
     margin-bottom: 1rem
+}
+
+#contact > .horiz_divider {
+    margin-bottom: 2rem;
+}
+
+#contact > h4 {
+    margin-bottom: 2rem;
 }
 
 .contact_card {
@@ -20,13 +29,28 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 30rem;
-    width: 45%;
+    height: max-content;
+    width: 50%;
     margin: 2rem 0;
+    padding: 5rem 0;
     text-align: left;
     box-shadow: 0 20px 25px -10px #999;
 }
 
 .form_field {
     width: 85%;
+}
+
+#contact > div > span {
+    display: none;
+}
+
+#contact > div > span.visible {
+    display: block;
+}
+
+@media screen and (max-width: 899px) {
+    .contact_card {
+        width: 90%;
+    }
 }

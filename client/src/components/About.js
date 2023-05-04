@@ -34,7 +34,6 @@ function About() {
         p: 4,
         transition: 'all 0.5s',
         padding: '3rem'
-
     };
 
     return (

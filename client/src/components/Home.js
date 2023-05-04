@@ -26,7 +26,7 @@ function Home() {
                 }}
             />
             <div id='project_btn'>
-                <Button className='home_option_button' variant='contained' startIcon={<EastIcon />}>See my projects</Button>
+                <Button className='home_option_button' variant='contained' startIcon={<EastIcon />} href='#projects'>See my projects</Button>
             </div>
         </div>
     )
