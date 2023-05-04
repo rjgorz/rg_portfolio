@@ -25,6 +25,13 @@ a:hover {
   background-color: blue;
   margin-bottom: 6rem;
 }
+#viewer::-webkit-scrollbar {
+  display: none;
+}
+#viewer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 /* #app_container {
   background: linear-gradient(

@@ -13,7 +13,7 @@ function Home() {
             <div className='social_links'>
                 <a href='https://github.com/rjgorz' target='_blank' rel="noreferrer"><GitHubIcon sx={{ color: 'black' }} fontSize="large" /></a>
                 <a href='https://linkedin.com/in/rjgorz/' target='_blank' rel="noreferrer"><LinkedInIcon sx={{ color: 'black' }} fontSize="large" /></a>
-                <a href='https://medium.com/@rjgorz' target='_blank' rel="noreferrer"><img src={medium} height='26px' alt='medium blog'/></a>
+                <a href='https://medium.com/@rjgorz' target='_blank' rel="noreferrer"><img src={medium} height='26px' width='26px' alt='medium blog'/></a>
             </div>
             <h1>HEY, I'M ROBERT GORZ</h1>
             <Typewriter
