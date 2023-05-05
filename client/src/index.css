@@ -33,13 +33,13 @@ a:hover {
   scrollbar-width: none;  /* Firefox */
 }
 
-#app_container {
+/* #app_container {
   background: linear-gradient(
     45deg,
     #cccccc,
     #ffffff
   );
-}
+} */
 
 /* width */
 ::-webkit-scrollbar {

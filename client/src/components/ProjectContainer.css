@@ -6,8 +6,7 @@
     text-align: center;
     height: 100%;
     width: 100%;
-    scroll-margin-top: 10rem;
-    padding-bottom: 14rem;
+    padding: 9rem 0 18rem 0;
 }
 
 #projects > h2 {

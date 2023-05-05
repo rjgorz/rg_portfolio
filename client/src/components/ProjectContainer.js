@@ -1,4 +1,5 @@
 import './ProjectContainer.css';
+import { motion } from "framer-motion"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -13,6 +14,7 @@ import wc from '../images/WhatsCookin1.jpg';
 function ProjectContainer() {
     const projects = [
         {
+            id: 1,
             title: 'Wander',
             description: 'Wander is a simple but elegant travel journaling application featuring an interactive map of the United States, state specific journal entry system, and photo gallery.',
             tech: 'JavaScript, React, Python, Flask, CSS',
@@ -20,6 +22,7 @@ function ProjectContainer() {
             githubLink: 'https://github.com/rjgorz/wander'
         },
         {
+            id: 2,
             title: 'Beat Bazaar',
             description: 'Create and modify customized playlists from a vast collection of songs with Beat Bazaar, or add new songs.',
             tech: 'JavaScript, React, Python, Flask, CSS',
@@ -27,6 +30,7 @@ function ProjectContainer() {
             githubLink: 'https://github.com/rjgorz/beat-bazaar'
         },
         {
+            id: 3,
             title: 'UFC Social',
             description: 'UFC Social is a retro style social app for UFC lovers. Browse fighter details, watch highlights, vote on polls and leave comments.',
             tech: 'JavaScript, React, CSS',
@@ -34,6 +38,7 @@ function ProjectContainer() {
             githubLink: 'https://github.com/rjgorz/UFC-social'
         },
         {
+            id: 4,
             title: "What's Cookin'",
             description: "Take the decision making process out of making meals, let What's Cookin' bring the recipe ideas to you.",
             tech: 'JavaScript, HTML, CSS',
@@ -44,7 +49,15 @@ function ProjectContainer() {
 
     const projList = projects.map(project => {
         return (
-            <Card className='project_card' variant="outlined">
+            <motion.Card
+                key={project.id}
+                className='project_card'
+                variant="outlined"
+                initial={{ opacity: 0, x: -500 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+            >
                 <CardMedia
                     sx={{ height: 500 }}
                     image={project.imagePath}
@@ -65,7 +78,7 @@ function ProjectContainer() {
                 <CardActions>
                     <a href={project.githubLink} target='_blank' rel="noreferrer"><GitHubIcon sx={{ color: 'black' }} fontSize="small" />GitHub</a>
                 </CardActions>
-            </Card>
+            </motion.Card>
         )
     })
 

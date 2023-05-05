@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion, useScroll, useSpring } from "framer-motion"
 import './Nav.css';
 import HamMenu from './HamMenu';
 import headshot from '../images/rg_headshot.jpg';
@@ -13,6 +14,12 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function Nav() {
     const [hamOpen, setHamOpen] = useState(false);
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    });
 
     return (
         <>
@@ -34,6 +41,7 @@ function Nav() {
                         </IconButton>
                     </div>
                 </div>
+                <motion.div className='progress_bar' style={{ scaleX }} />
             </div>
             <HamMenu hamOpen={hamOpen} setHamOpen={setHamOpen} />
         </>
