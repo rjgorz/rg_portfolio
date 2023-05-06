@@ -8,7 +8,7 @@
     width: 100%;
     padding: 9rem 0 18rem 0;
     background-color: whitesmoke;
-    border-bottom: 10px groove blue;
+    /* border-bottom: 10px groove blue; */
 }
 
 #about > h2 {
