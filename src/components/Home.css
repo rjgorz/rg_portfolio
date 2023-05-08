@@ -57,6 +57,10 @@
     opacity: 100%;
 }
 
+#project_btn > a {
+    color: white !important;
+}
+
 
 @media screen and (max-width: 599px) {
     #home > h1 {
