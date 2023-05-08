@@ -1,15 +1,41 @@
 import './Footer.css';
+import Button from '@mui/material/Button';
+import HomeIcon from '@mui/icons-material/Home';
+import PersonIcon from '@mui/icons-material/Person';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import medium from '../images/medium.png';
+
 function Footer() {
 
     return (
-        <div id='footer'>
-            <div id='footer_conclusion'>
-
+        <>
+            <div id='footer'>
+                <div id='footer_conclusion'>
+                    <h4>Robert Gorz</h4>
+                </div>
+                <div id='footer_links'>
+                    <Button className='navBtn' href='#home' startIcon={<HomeIcon />}>Home</Button>
+                    <Button className='navBtn' href='#about' startIcon={<PersonIcon />}>About</Button>
+                    <Button className='navBtn' href='#projects' startIcon={<TerminalIcon />}>Projects</Button>
+                    <Button className='navBtn' href='#contact' startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
+                </div>
+                <div id='footer_socials'>
+                    <h4>Socials</h4>
+                    <br />
+                    <div id='footer_social_links'>
+                        <a href='https://github.com/rjgorz' target='_blank' rel="noreferrer"><GitHubIcon sx={{ color: 'black' }} fontSize="large" /></a>
+                        <a href='https://linkedin.com/in/rjgorz/' target='_blank' rel="noreferrer"><LinkedInIcon sx={{ color: 'black' }} fontSize="large" /></a>
+                        <a href='https://medium.com/@rjgorz' target='_blank' rel="noreferrer"><img src={medium} height='26px' width='26px' alt='medium blog' /></a>
+                    </div>
+                </div>
             </div>
-            <div id='footer_socials'>
-
+            <div>
+                <p style={{ backgroundColor: 'rgb(211, 211, 211)', textAlign: 'center', padding: '0.5rem' }}><em>© Copyright 2023. Made by Robert Gorz.</em></p>
             </div>
-        </div>
+        </>
     )
 }
 

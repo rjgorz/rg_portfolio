@@ -7,6 +7,7 @@
     height: 100%;
     width: 100%;
     padding: 9rem 0 18rem 0;
+    /* border-bottom: 10px groove blue; */
 }
 
 #projects > h2 {
@@ -41,6 +42,11 @@
     margin: 2rem 0;
     text-align: left;
     box-shadow: 0 20px 25px -10px #999;
+    transition: all 0.5s;
+}
+
+.project_card:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 899px) {

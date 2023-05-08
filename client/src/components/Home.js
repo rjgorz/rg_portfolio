@@ -10,7 +10,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import medium from '../images/medium.png';
 
 function Home() {
-    const [hover, setHover] = useState(false);
 
     return (
         <div id='home'>

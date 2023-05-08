@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import './Contact.css';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Card from '@mui/material/Card';
 
 function Contact() {
     const [name, setName] = useState('');
