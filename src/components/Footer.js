@@ -16,12 +16,6 @@ function Footer() {
                 <div id='footer_conclusion'>
                     <h4>Robert Gorz</h4>
                 </div>
-                <div id='footer_links'>
-                    <Button className='navBtn' href='#home' startIcon={<HomeIcon />}>Home</Button>
-                    <Button className='navBtn' href='#about' startIcon={<PersonIcon />}>About</Button>
-                    <Button className='navBtn' href='#projects' startIcon={<TerminalIcon />}>Projects</Button>
-                    <Button className='navBtn' href='#contact' startIcon={<ConnectWithoutContactIcon />}>Contact</Button>
-                </div>
                 <div id='footer_socials'>
                     <h4>Socials</h4>
                     <br />
