@@ -1,4 +1,10 @@
+import { useState } from 'react';
+import { MobilePDFReader } from 'react-read-pdf';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Modal from '@mui/material/Modal';
 import './About.css';
+import resume from '../files/rg_resume.pdf';
 import html from '../images/html.png';
 import css from '../images/css.png';
 import javascript from '../images/javascript.png';
@@ -11,6 +17,24 @@ import cplusplus from '../images/c++.png';
 
 
 function About() {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        height: '70%',
+        width: '70%',
+        transform: 'translate(-50%, -50%)',
+        bgcolor: 'background.paper',
+        border: '2px solid #000',
+        boxShadow: 24,
+        p: 4,
+        transition: 'all 0.5s',
+        padding: '3rem'
+    };
 
     return (
         <div id='about'>
@@ -37,6 +61,15 @@ function About() {
                         team member. If you are looking for a software engineer with a diverse background and
                         a passion for delivering innovative solutions, I would love to <a href='#contact'>connect</a>!
                     </p>
+                    <br />
+                    <div>
+                        <Button id='modal_btn' variant='contained' onClick={handleOpen}>View Resume</Button>
+                        <Modal open={open} onClose={handleClose}>
+                            <Box sx={style}>
+                                <MobilePDFReader url={resume} isShowHeader={false} isShowFooter={false} />
+                            </Box>
+                        </Modal>
+                    </div>
                 </div>
                 <div id='spacer'>
                     <div className='about_vert_divider'></div>
