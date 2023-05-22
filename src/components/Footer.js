@@ -1,9 +1,4 @@
 import './Footer.css';
-import Button from '@mui/material/Button';
-import HomeIcon from '@mui/icons-material/Home';
-import PersonIcon from '@mui/icons-material/Person';
-import TerminalIcon from '@mui/icons-material/Terminal';
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import medium from '../images/medium.png';

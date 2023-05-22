@@ -31,9 +31,9 @@ function Contact() {
                 message
             };
 
-            // emailjs.send(serviceId, templateId, templateParams, publicKey)
-            //     .then(response => console.log(response))
-            //     .then(error => console.log(error));
+            emailjs.send(serviceId, templateId, templateParams, publicKey)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
 
             setName('');
             setEmail('');

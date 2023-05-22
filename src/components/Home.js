@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Home.css';
 import Typewriter from 'typewriter-effect';
 import EastIcon from '@mui/icons-material/East';
