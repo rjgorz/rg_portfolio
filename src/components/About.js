@@ -52,7 +52,7 @@ function About() {
                     </p>
                     <br />
                     <p>
-                        With 5+ years of previous experience in <strong>Engineering</strong> and
+                        With 5+ years of experience in <strong>Engineering</strong> and
                         <strong> Project Management</strong>, I bring a unique perspective to any team.
                     </p>
                     <br />
