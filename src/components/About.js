@@ -1,8 +1,4 @@
-import { useState } from 'react';
-import { MobilePDFReader } from 'react-read-pdf';
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Modal from '@mui/material/Modal';
 import './About.css';
 import resume from '../files/rg_resume.pdf';
 import html from '../images/html.png';
@@ -17,24 +13,6 @@ import cplusplus from '../images/c++.png';
 
 
 function About() {
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-
-    const style = {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        height: '70%',
-        width: '70%',
-        transform: 'translate(-50%, -50%)',
-        bgcolor: 'background.paper',
-        border: '2px solid #000',
-        boxShadow: 24,
-        p: 4,
-        transition: 'all 0.5s',
-        padding: '3rem'
-    };
 
     return (
         <div id='about'>
@@ -52,7 +30,7 @@ function About() {
                     </p>
                     <br />
                     <p>
-                        With 5+ years of previous experience in <strong>Engineering</strong> and
+                        With 5+ years of experience in <strong>Engineering</strong> and
                         <strong> Project Management</strong>, I bring a unique perspective to any team.
                     </p>
                     <br />
@@ -63,12 +41,9 @@ function About() {
                     </p>
                     <br />
                     <div>
-                        <Button id='modal_btn' variant='contained' onClick={handleOpen}>View Resume</Button>
-                        <Modal open={open} onClose={handleClose}>
-                            <Box sx={style}>
-                                <MobilePDFReader url={resume} isShowHeader={false} isShowFooter={false} />
-                            </Box>
-                        </Modal>
+                        <a href={resume} target='_blank' rel="noreferrer">
+                            <Button id='modal_btn' variant='contained'>View Resume</Button>
+                        </a>
                     </div>
                 </div>
                 <div id='spacer'>

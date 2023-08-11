@@ -40,6 +40,7 @@
 .project_card {
     width: 45%;
     margin: 2rem 0;
+    border-radius: 2%;
     text-align: left;
     box-shadow: 0 20px 25px -10px #999;
     transition: all 0.5s;
@@ -47,6 +48,10 @@
 
 .project_card:hover {
     transform: scale(1.03);
+}
+
+#card_media {
+    border-radius: 2%;
 }
 
 @media screen and (max-width: 899px) {

@@ -61,6 +61,7 @@ function ProjectContainer() {
                     sx={{ height: 500 }}
                     image={project.imagePath}
                     title={project.title}
+                    id="card_media"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
